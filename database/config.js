@@ -1,6 +1,6 @@
 const knex = require('knex')(
     {
-        clint: 'mysql2',
+        client: 'mysql2',
         connection: {
             host: 'localhost',
             user: 'felipe',

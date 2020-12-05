@@ -5,6 +5,20 @@ let data = {
     price: 29.90
 }
 
-const query = Database.insert(data)
+/*
+    let data = [
+        {....},
+        {....},
+        {....},
+        {....},
+        {....}
+    ]
+*/
 
-console.log(query)
+const query = Database.insert(data).into('games').then(response => {
+
+    console.log(response)
+
+}).catch(error => console.log(error))
+
+// console.log(query.toQuery())
