@@ -1,5 +1,4 @@
-const knex = require('knex')
-(
+const knex = require('knex')(
     {
         clint: 'mysql2',
         connection: {
