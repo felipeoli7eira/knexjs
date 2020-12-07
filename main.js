@@ -69,3 +69,40 @@ Database
 .catch(error => console.log(error)
 
 */
+
+/** Update
+
+Database.where({id: 7}).update({ price: 0 }).table('games')
+.then(result => console.log(result))
+.catch(error => console.log(error))
+
+*/
+
+/** Order by...
+
+Database
+.select()
+.table('games')
+.orderBy("id", "desc")
+.then(result => console.log(result))
+.catch(error => console.log(error))
+
+*/
+
+/*
+    Database.insert(
+        {
+            column: value...
+        }
+    ).table('studios').then().catch()
+*/
+
+/*   JOIN
+
+Database.select().table('pai').innerJoin('filha', 'filha.id_registro_pai', 'pai.id')
+.then().catch()
+
+Database.select(['pai.id', 'filha.id as field']).table('pai').innerJoin('filha', 'filha.id_registro_pai', 'pai.id')
+.then().catch()
+
+*/
